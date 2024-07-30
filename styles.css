@@ -1,0 +1,352 @@
+/* General Styles */
+body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ color: #fff;
+ background-color: #1e1e1e;
+}
+
+.container {
+ width: 90%;
+ margin: 0 auto;
+ max-width: 1200px;
+}
+
+.mobi{
+ display: flex;
+}
+
+a {
+ color: #6c63ff;
+ text-decoration: none;
+}
+
+a:hover {
+ text-decoration: underline;
+}
+
+/* Header */
+header {
+ background: #3f3f6c;
+ padding: 20px 0;
+ color: #fff;
+ display: block;
+}
+
+header .logo {
+ max-width: 150px;
+ border-radius: 5px;
+}
+.menu{
+ font-size: 50px;
+ display: none;
+}
+
+nav ul {
+ list-style: none;
+ padding: -1;
+ margin: -1;
+ display: flex;
+ justify-content: flex-end;
+ gap: 20px;
+}
+
+nav ul li {
+ display: inline;
+}
+
+nav ul li a {
+ color: #fff;
+ font-size: 1.1rem;
+ transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+ color: #6c63ff;
+}
+
+/* Hero Section url('/img/ARCADE-1.png') */
+.hero {
+ background: black no-repeat center center/cover;
+ color: #fff;
+ padding: 100px 0;
+ text-align: center;
+}
+
+.hero .slogan {
+ font-size: 3rem;
+ margin-bottom: 20px;
+}
+
+.hero .cta-button {
+ background-color: #6c63ff;
+ color: #fff;
+ padding: 15px 30px;
+ text-decoration: none;
+ border-radius: 5px;
+ font-size: 1.2rem;
+ transition: background-color 0.3s ease;
+}
+
+.hero .cta-button:hover {
+ background-color: #4e4cfd;
+}
+
+/* About Section */
+#about {
+ background: #3f3f6c;
+ padding: 60px 0;
+ text-align: center;
+}
+
+#about h2 {
+ font-size: 2.5rem;
+ margin-bottom: 20px;
+}
+
+#about p {
+ font-size: 1.2rem;
+}
+
+.team {
+ display: flex;
+ justify-content: center;
+ gap: 20px;
+ flex-wrap: wrap;
+}
+
+.team-member {
+ flex: 1;
+ max-width: 300px;
+ text-align: center;
+ background: #4e4e4e;
+ border-radius: 10px;
+ padding: 20px;
+}
+
+.team-member img {
+ border-radius: 50%;
+ width: 150px;
+ height: 150px;
+ object-fit: cover;
+ margin-bottom: 10px;
+}
+
+/* Pricing Section */
+#pricing {
+ padding: 60px 0;
+}
+
+#pricing h2 {
+ font-size: 2.5rem;
+ text-align: center;
+ margin-bottom: 40px;
+}
+
+.pricing-table {
+ display: flex;
+ justify-content: center;
+ gap: 20px;
+ flex-wrap: wrap;
+}
+
+.pricing-plan {
+ background: #3f3f6c;
+ border-radius: 10px;
+ padding: 20px;
+ text-align: center;
+ flex: 1;
+ max-width: 300px;
+}
+
+.pricing-plan.featured{
+ background: #6c63ff;
+ color: white !important;
+}
+ .pricing-plan.featured a{
+  background: white;
+  margin: 2px;
+  border-radius: 2px;
+ }
+.pricing-plan h3 {
+ margin: 0;
+ font-size: 1.5rem;
+}
+
+.pricing-plan p {
+ font-size: 1.2rem;
+ margin: 10px 0;
+}
+
+.pricing-plan ul {
+ list-style: none;
+ padding: 0;
+ margin: 10px 0;
+}
+
+.pricing-plan ul li {
+ margin: 5px 0;
+}
+
+/* Services Section */
+#services {
+ background: #4e4e4e;
+ padding: 60px 0;
+}
+
+#services h2 {
+ font-size: 2.5rem;
+ text-align: center;
+ margin-bottom: 40px;
+}
+
+.services {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 20px;
+ justify-content: center;
+}
+
+.service {
+ background: #3f3f6c;
+ border-radius: 10px;
+ padding: 20px;
+ flex: 1;
+ max-width: 300px;
+}
+
+.service h3 {
+ font-size: 1.5rem;
+ margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact {
+ padding: 60px 0;
+ text-align: center;
+ background: #121212;
+}
+
+#contact h2 {
+ font-size: 2.5rem;
+ margin-bottom: 20px;
+}
+
+#contact ul {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+
+#contact ul li {
+ font-size: 1.2rem;
+ margin: 10px 0;
+}
+
+/* Footer */
+footer {
+ background: #3f3f6c;
+ padding: 20px 0;
+ color: #fff;
+ text-align: center;
+}
+
+footer p {
+ margin: 0;
+ font-size: 1rem;
+}
+
+footer .social-media {
+ margin-top: 10px;
+}
+
+footer .social-media a {
+ color: #fff;
+ text-decoration: none;
+ margin: 0 10px;
+ font-size: 1.2rem;
+ transition: color 0.3s ease;
+}
+
+footer .social-media a:hover {
+ color: #6c63ff;
+}
+
+/* Loading Screen */
+#loading {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: #1e1e1e;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ z-index: 9999;
+}
+
+.loader {
+ border: 8px solid #3f3f6c;
+ border-top: 8px solid #6c63ff;
+ border-radius: 50%;
+ width: 60px;
+ height: 60px;
+ animation: spin 1s linear infinite;
+}
+.grill{
+ display: none;
+}
+
+@keyframes spin {
+ 0% {
+  transform: rotate(0deg);
+ }
+
+ 100% {
+  transform: rotate(360deg);
+ }
+}
+
+.mobile-only{
+ display: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+.logo{
+ max-width: 64px !important;
+}
+
+ nav ul {
+  flex-direction: column;
+  text-align: center;
+ }
+
+ nav ul li {
+  margin: 10px 0;
+ }
+
+ .pricing-table,
+ .services {
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .pricing-plan,
+ .service {
+  max-width: 100%;
+ }
+
+ .team {
+  flex-direction: column;
+  align-items: center;
+ }
+ nav {
+  display: none;
+ }
+ .mobile-only{
+  display: block;
+  }
+  }
