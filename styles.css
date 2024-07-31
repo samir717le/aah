@@ -1,10 +1,10 @@
-/* General Styles */
+
 body {
  font-family: Arial, sans-serif;
  margin: 0;
  padding: 0;
  color: #fff;
- background-color: #1e1e1e;
+ background-color: #1E1E1E;
 }
 
 .container {
@@ -36,7 +36,6 @@ header {
 
 header .logo {
  max-width: 150px;
- max-height: 150px;
  border-radius: 5px;
 }
 .menu{
@@ -69,7 +68,7 @@ nav ul li a:hover {
 
 /* Hero Section url('/img/ARCADE-1.png') */
 .hero {
- background: black no-repeat center center/cover;
+/* background: black no-repeat center center/cover;*/
  color: #fff;
  padding: 100px 0;
  text-align: center;
@@ -81,7 +80,7 @@ nav ul li a:hover {
 }
 
 .hero .cta-button {
- background-color: #6c63ff;
+ /*background-color: #6c63ff;*/
  color: #fff;
  padding: 15px 30px;
  text-decoration: none;
@@ -137,6 +136,7 @@ nav ul li a:hover {
 /* Pricing Section */
 #pricing {
  padding: 60px 0;
+ background: #1E1E1E;
 }
 
 #pricing h2 {
@@ -350,4 +350,4 @@ footer .social-media a:hover {
  .mobile-only{
   display: block;
   }
-  }
+}
